@@ -2,6 +2,8 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
+
+
 /* 
 
   //Given this problem: 
@@ -24,18 +26,46 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+  
 }
+
+getLength
+
+function arrLength() {
+
+}
+
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+      return cb(arr.length - 1);
 }
+last(items, function(cb) {
+    console.log(cb);
+});
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x,y);
+
+}
+
+sumNums(2,6,total);
+
+function total(x,y) {
+  console.log(x+y);
+
 }
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x,y);
+}
+
+multiplyNums(3,5, mult);
+
+function mult(x,y) {
+  console.log(x*y);
 }
 
 function contains(item, list, cb) {
@@ -50,3 +80,24 @@ function removeDuplicates(array, cb) {
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
 }
+
+
+// function higherOrderFunction(param1,param2,callback) {
+//   // console.log(`${greeting}, this is my random number: ${random}`);
+//   callback(param1,param2);
+//  }
+ 
+// higherOrderFunction(3,1,product);
+
+//  // Callback function definition
+//  function add(a,b) {
+//   console.log(a+b);
+//  }
+ 
+//  function subtract(a,b) {
+//   console.log(a-b);
+//  }
+ 
+//  function product(a,b) {
+//   console.log(a*b);
+//  } 
